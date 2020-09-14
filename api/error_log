@@ -1,0 +1,20 @@
+[09-Sep-2020 10:41:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/webidqye/public_html/russia-mbbs/class/user.php:28
+Stack trace:
+#0 /home/webidqye/public_html/russia-mbbs/api/adduser.php(14): User->getAllUser()
+#1 {main}
+  thrown in /home/webidqye/public_html/russia-mbbs/class/user.php on line 28
+[09-Sep-2020 10:42:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/webidqye/public_html/russia-mbbs/class/user.php:28
+Stack trace:
+#0 /home/webidqye/public_html/russia-mbbs/api/adduser.php(14): User->getAllUser()
+#1 {main}
+  thrown in /home/webidqye/public_html/russia-mbbs/class/user.php on line 28
+[09-Sep-2020 11:59:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/webidqye/public_html/russia-mbbs/class/collage.php:26
+Stack trace:
+#0 /home/webidqye/public_html/russia-mbbs/api/allCollage.php(13): Collages->getAllCollages()
+#1 {main}
+  thrown in /home/webidqye/public_html/russia-mbbs/class/collage.php on line 26
+[09-Sep-2020 12:13:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/webidqye/public_html/russia-mbbs/class/collage.php:26
+Stack trace:
+#0 /home/webidqye/public_html/russia-mbbs/api/allCollage.php(13): Collages->getAllCollages()
+#1 {main}
+  thrown in /home/webidqye/public_html/russia-mbbs/class/collage.php on line 26

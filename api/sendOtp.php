@@ -18,9 +18,13 @@
 
     include_once '../class/otp.php';
 
-    $token = null;
-    $headers = apache_request_headers();
-    $token = $headers['Authorization'] ?? '';
+    //$token = null;
+    $headers = getallheaders();
+    foreach ($headers as $key => $value) {
+        if($key == 'Authorization') {
+           $token = $value; 
+        }
+    }
 
     if (!empty($token) && $token != '') {
         if (preg_match('/Bearer\s(\S+)/', $token, $matches)) {
@@ -57,14 +61,13 @@
 
             if (!empty($email) && $email != '' && $email != null) {
                 
+
                 $message = 'Use this OTP '. $otp . ' For Login';
                 $classOtp = new Otp();
 
                 $result = $classOtp->send_sms($phone , $message);
 
                 $mail = mail($email, 'Verify OTP', $message);
-
-                print_r($mail); exit();
 
                 if($result == true) {
                     
@@ -82,7 +85,7 @@
                     );
                 }
             } else {
-                
+    
                 $message = 'Use this OTP '. $otp . ' For Login';
                 $classOtp = new Otp();
                 $result = $classOtp->send_sms($phone , $message);

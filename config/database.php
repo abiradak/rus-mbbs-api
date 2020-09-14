@@ -1,9 +1,14 @@
 <?php 
     class Database {
         private $host = "localhost";
-        private $database_name = "rus-mbbs";
-        private $username = "root";
-        private $password = "";
+        private $database_name = "webidqye_rus-mbbs";
+        private $username = "webidqye_rus-mbb";
+        private $password = "rus-mbb@123";
+
+        // private $host = "localhost";
+        // private $database_name = "rus-mbbs";
+        // private $username = "root";
+        // private $password = "";
 
         public $conn;
 
@@ -17,5 +22,5 @@
             }
             return $this->conn;
         }
-    }  
+    }
 ?>

@@ -1,5 +1,7 @@
 <?php
     header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: Content-Type, Accept, Authorization, X-Requested-With, X-Auth-Token, Origin, Application'"); 
+    header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
     header("Content-Type: application/json; charset=UTF-8");
     
     include_once '../config/database.php';
@@ -30,8 +32,6 @@
                 "description" => $description,
                 "image" => $image
             );
-
-
             array_push($collageList["body"], $e);
 
         }
